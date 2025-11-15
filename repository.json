@@ -1,0 +1,13 @@
+{
+  "name": "Fing Agent Add-on Repository",
+  "url": "https://github.com/mirarus/ha-fing-agent",
+  "maintainer": "Ali Güçlü -> Mirarus",
+  "addons": [
+    {
+      "slug": "fing-agent",
+      "name": "Fing Agent",
+      "description": "Run Fing Agent inside Home Assistant OS.",
+      "version": "0.0.1"
+    }
+  ]
+}
