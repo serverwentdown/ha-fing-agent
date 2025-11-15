@@ -1,4 +1,3 @@
----
 name: "Fing Agent"
 version: "0.0.1"
 slug: "fing-agent"
@@ -7,8 +6,6 @@ url: "https://github.com/mirarus/ha-fing-agent"
 arch:
   - amd64
   - aarch64
-  - armv7
-  - armhf
 startup: services
 boot: auto
 host_network: true
