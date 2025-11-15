@@ -1,27 +1,24 @@
 ---
 name: "Fing Agent"
 version: "0.0.1"
-slug: fing_agent
+slug: "fing-agent"
 description: "Run Fing Agent inside Home Assistant OS as an add-on."
-url: http://github.com/mirarus/ha-fing-agent
+url: "https://github.com/mirarus/ha-fing-agent"
 arch:
   - amd64
   - aarch64
+  - armv7
+  - armhf
 startup: services
 boot: auto
-hassio_api: true
-hassio_role: manager
-homeassistant_api: false
-panel_icon: "mdi:lan"
 host_network: true
 privileged:
   - NET_ADMIN
+ports:
+  - 44444/tcp
+image: "fing/fing-agent:latest"
 map:
   - config:rw
   - share:rw
-options:
-  api_key: ""
-schema:
-  api_key: str
-environment:
-  API_KEY: "{api_key}"
+options: {}
+schema: {}
