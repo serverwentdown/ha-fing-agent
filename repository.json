@@ -1,7 +1,7 @@
 {
   "name": "Fing Agent Add-on Repository",
   "url": "https://github.com/mirarus/ha-fing-agent",
-  "maintainer": "Ali Güçlü -> Mirarus",
+  "maintainer": "Ali Güçlü <aliguclutr@gmail.com>",
   "addons": [
     {
       "slug": "fing-agent",
