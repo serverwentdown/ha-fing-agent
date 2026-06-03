@@ -13,7 +13,7 @@ privileged:
   - NET_ADMIN
 ports:
   - 44444/tcp
-image: "fing/fing-agent:latest"
+image: "fing/fing-agent"
 map:
   - config:rw
   - share:rw
