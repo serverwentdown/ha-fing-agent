@@ -1,5 +1,5 @@
 name: "Fing Agent"
-version: "0.0.1"
+version: "1.1.1"
 slug: "fing-agent"
 description: "Run Fing Agent inside Home Assistant OS as an add-on."
 url: "https://github.com/mirarus/ha-fing-agent"
@@ -13,7 +13,7 @@ privileged:
   - NET_ADMIN
 ports:
   - 44444/tcp
-image: "fing/fing-agent:latest"
+image: "fing/fing-agent"
 map:
   - config:rw
   - share:rw
