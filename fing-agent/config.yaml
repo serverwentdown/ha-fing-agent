@@ -1,8 +1,8 @@
 name: "Fing Agent"
 version: "1.1.1"
 slug: "fing-agent"
-description: "Run Fing Agent inside Home Assistant OS as an add-on."
-url: "https://github.com/mirarus/ha-fing-agent"
+description: "Run Fing Agent inside Home Assistant OS as an app"
+url: "https://github.com/serverwentdown/ha-fing-agent"
 arch:
   - amd64
   - aarch64
@@ -13,9 +13,11 @@ privileged:
   - NET_ADMIN
 ports:
   44444/tcp: 44444
-image: "fing/fing-agent"
+ports_description:
+  44444/tcp: "UPnP publisher"
 map:
-  - config:rw
-  - share:rw
+  - type: data
+    path: /app/fingdata
+image: "fing/fing-agent"
 options: {}
 schema: {}
